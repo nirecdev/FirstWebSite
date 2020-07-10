@@ -1,0 +1,2166 @@
+/***************************************
+Template Name: Green Fair
+Author: Md Foysal Ahamed
+Created: July 05 2016
+Version: 1.2
+****************************************/
+
+
+/*CSS Style Structure
+1. General Or Universal code,
+2. Import Google's Fonts,
+3. Header,
+4. Slider aka product list or slideshow,
+5. Welcome the one with calendar modal/ pop up and announcements and admin log in,
+6. Volunteer NAMED WARRIOR (join us) -- join.php,
+7. Gallery,
+8. Achievment move to announcement modal in welcome,
+9. Event counter move to announcement modal in welcome,
+10. Deliverables
+11. Testimonial move to announcement modal in welcome,
+12. Link -- quicklinks in header,
+12. Battle cry,
+13. Organzational Chart --- orgchart.php
+14. Promote or Advertise on us,
+15. Calendar,
+16. Roles,
+17. Forms,
+18. Privacy Statement Modal,
+19. Policies and FAQ,
+20. Map,
+21. Contact,
+22. Footer.
+*/
+
+
+/*
+font-family: 'Roboto Slab', serif; CANCEL SUBJECT TO COPYRIGHT
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+
+/*
+font-family: 'Lato', sans-serif;
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
+/*
+font-family: 'Raleway', sans-serif;
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic);
+
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'Advent Pro'; USE THIS instead of robot
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'Marvel'; USE THIS instead of open sans
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Marvel:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'Open Sans Condensed'; USE THIS instead of lato
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'Gruppo'; 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Gruppo:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'Righteous'; 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Righteous:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+/*
+font-family:'SquaDA oNE'; 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Squada+One:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway); /* table effect*/
+
+/*UNIVERSAL CODE*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto
+}
+.floatleft {
+    float: left
+}
+.floatright {
+    float: right
+}
+.fix {
+    overflow: hidden
+}
+.clear {
+    clear: both
+}
+.container {
+    transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+    -ms-transition: all 0.9s ease 0s;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a,
+a:hover,
+a:focus,
+a:visited,
+a:hover {
+    text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+html {
+    height: 100%
+}
+body {
+
+}
+
+
+/*Remove chrome Input Field’s Unwanted Yellow Background Color*/
+
+input: -webkit-autofill,
+input: -webkit-autofill:hover,
+input: -webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 100px white inset !important;
+}
+
+/*Input focus color removed*/
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/*Bootstrap Form Control Focus*/
+
+.form-control:focus {
+    border-color: #fff;
+    border: 0px;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/***************************/
+
+.zero_mp {
+    padding: 0;
+    margin: 0;
+}
+.margin_btm {
+    margin-bottom: 0px !important;
+}
+.sections{
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+}
+.min-spacing{
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+/***********************************************/
+
+body {
+background-color: #fff;}
+/*header*/
+
+
+/*Header Top header*/
+
+#header .top_header {
+    min-height: 50px;
+    background: #FBFBFB;
+    border-bottom: 2px solid #F2F2F2;
+    padding-top: 15px;
+}
+#header .top_header .address {
+    border-right: 1px solid #E6E5E5;
+}
+#header .top_header .address p {
+    font-size: 12px;
+    padding-top: 2px;
+    color: #646464;
+    font-family: 'Marvel';
+}
+#header .top_header .phone p {
+    color: #646464;
+    font-size: 12px;
+    font-family: 'Marvel';
+    padding-top: 1px;
+    display: inline-block;
+}
+#header .top_header .address i,
+#header .top_header .phone i {
+    padding: 3px 5px;
+    font-size: 15px;
+    color:#646464;
+}
+#header .top_header .social_icon i {
+    padding: 0 5px;
+    color: #787878;
+    font-size: 12px;
+    font-weight: 700;
+}
+#header .top_header .social_icon i:hover {
+    color: #43A906;
+}
+#header .top_header .address i:hover,
+#header .top_header .phone i:hover {
+    color: #43A906;
+}
+
+/*End of top header*/
+
+#header .header_menu {
+    min-height: 50px;
+    /*border-bottom: 1px solid #3D3E3D;*/
+    /*border-radius: 0px 0px 5px 5px;*/
+    z-index: 9999;
+   
+}
+#header .header_menu .navbar {
+    border: 0px solid transparent;
+}
+#header .header_menu .custom_navbar-brand {
+    padding-left: 0px;
+}
+#header .header_menu .navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+#header .header_menu .navbar-default .navbar-nav>.active>a,
+#header .header_menu .navbar-default .navbar-nav>.active>a:focus,
+#header .header_menu .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+#header .header_menu .main_menu {
+    padding-top: 20px;
+}
+#header .header_menu ul.main_menu li a {
+    color: #393939;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Advent Pro';   
+}
+
+#header .header_menu ul.main_menu li button {
+    color: #393939;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Advent Pro';
+    padding-left: : 10px ;
+    padding-right: 20px;
+}
+/* Top Header Home etc */
+#header .header_menu ul.main_menu li a:hover {
+    color: #008000;
+    transform: scale(1.2,1.2);
+    transition: .3s transform;
+
+    text-shadow: 5px 5px 5px #008000;
+    transition:  .3s text-shadow;
+
+}
+/*#header .header_menu ul.main_menu li.active a {
+    color: #008000;
+}
+#header .header_menu ul.main_menu li,
+#header .header_menu ul.main_menu li.active a {
+    display: inline-block;
+    position: relative;
+}
+#header .header_menu ul.main_menu li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    margin-top: 6px;
+}*/
+#header .header_menu ul.main_menu li:hover:after,
+#header .header_menu ul.main_menu li.active:after {
+    width: 90%;
+    background: #4DA91C;
+}
+#header .dropdown .dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: #393939;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Advent Pro';
+    padding-top: 10px;
+}
+#header a:hover, .dropdown:hover .dropbtn{
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.2,1.2);
+    transition: .3s transform;
+
+
+}	
+/* The container <div> - needed to position the dropdown content */
+#header .dropdown {
+ position: relative;
+ display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+#header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+/* Style the links inside the dropdown */
+#header .dropdown-content a {
+    float: none;
+    color: #008000;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Advent Pro';
+    font-weight: 600;
+    font-size: 18px;
+
+}
+/* Add a green background to dropdown links on hover */
+#header .dropdown-content a:hover {
+    background-color: #d3d3d3; /* highlight ng selected*/
+    color: #393939;
+    border-radius: 5px 5px; /*border ng highlight*/
+}
+/* Show the dropdown menu on hover */
+#header .dropdown:hover .dropdown-content {
+display: block;
+border-radius: 5px 5px; /* the background of dropdown content*/
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#header .dropdown:hover .dropbtn {
+background-color: #fff;
+color: #008000;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+#header .dropdown:hover .dropdown-content {
+    display: block;
+    color: #393939;
+}
+#header .today {
+
+    font-family: 'Marvel';
+}
+
+/* **************** Slider or product gallery *********** */
+
+#slider {
+    min-height: 300px;
+    /*margin-left: 100px;
+    margin-right: 100px; /* if gusto liitan yung product gallery / slider */ 
+    border-radius: 10px 10px 10px 10px;
+    background: url(img/img3.jpg) no-repeat scroll top center / cover; /* char ginaya lang sa testimonial */
+}
+#slider .slider_text {
+    padding-bottom: 13%;
+}
+#slider .slider_text h2 {
+    font-size: 52px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+#slider .slider_text h3 {
+    font-size: 45px;
+    font-family: 'Marvel';
+    color: #fff;
+}
+/*#slider .slider_text p {
+    font-size: 17px;
+    padding-bottom: 60px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+}*/
+#slider .slider_text a.custom_btn {
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 25px;
+    background: #008000;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 600;
+}
+#slider .slider_text h2,
+#slider .slider_text h3,
+#slider .slider_text p,
+#slider .slider_text a.custom_btn {
+    text-transform: uppercase;
+}
+#slider .slider_text h3 {
+    font-size: 45px;
+    padding: 10px 0;
+    font-family: 'Open Sans Condensed';
+    font-weight: normal;
+}
+#slider .slider_overlay {
+    position: relative;
+}
+#slider .slider_overlay:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #008000 100%);*/
+}
+#slider img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin-left: 32.5%;
+}
+#slider td, #slider th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    }
+#slider .item img {
+
+    width: 100%;
+
+}
+#slider .head_product h3, #slider .head_product2 h3{
+    text-align: center;
+color: #008000;
+font-family: 'Marvel'
+font-weight: 800;
+margin: auto;
+padding-top: 15px;
+}
+#slider input#name_product, input#file_p, input#upload_product, input#id_product, input#delete_product {
+    background-color: green;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 43%;
+    font-family: 'Marvel';
+}
+
+/*Slider Fade In*/
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*Welcome Section > HOME AND WHITE SECTION AT TOP*/
+#welcome {
+    min-height: 300px;
+    background: #fff;
+}
+.wel_header {
+    text-align: center;
+    color: #222222;
+}
+.fw-heading.fw-heading-center {
+    padding-bottom: 40px;
+
+}
+.wel_header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 25px;
+    font-family: 'Advent Pro' !important;
+    color: #222222;
+}
+.wel_header p {
+    font-size: 16px;
+    font-family: 'Marvel';
+}
+#welcome .single_item {
+    padding-top: 30px;
+    text-align: center;
+}
+#welcome .welcome_icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #C4C4C4;
+    transition: .7s;
+}
+/* ito nag hihighlight sa icon header pag nasa top*/
+#welcome .welcome_icon i {
+    margin-top: 5%;
+    font-size: 50px;
+    transition: .7s;
+    color: #008000;
+}
+#welcome .item_list h4 {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: #393939;
+    transition: 0.7s;
+    font-family: 'Advent Pro';
+}
+#welcome .item_list p {
+    font-size: 14px;
+    color: #646464;
+    font-family: 'Marvel';
+}
+#welcome .item_list:hover .welcome_icon {
+    background: #008000;
+    cursor: pointer;
+}
+#welcome .item_list:hover .welcome_icon i {
+    color: #fff;
+}
+#welcome .item_list:hover h4 {
+    color: #43a906;
+    cursor: pointer;
+}
+#welcome .today {
+    font-family: 'Marvel';
+}
+
+/* BLACK PART NEAR TOP. CHANGE TO join us warrior */
+
+#warrior {
+    min-height: 500px;
+    background: #000000;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#warrior .container {
+    margin-left: 20%;
+}
+#warrior .warrior_content h3 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 10px;
+    font-family: 'Marvel';
+}
+#warrior .warrior_content h3 span {
+    color: #43a906;
+    padding-bottom: 50px;
+}
+#warrior .warrior_content p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Marvel';
+    padding-bottom: 30px;
+}
+#warrior .join_us {
+    padding-top: 55px;
+}
+#warrior .war_area {
+    padding: 80px 0;
+}
+#warrior button {
+    background: #008000;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 55px;
+    background: #43a906;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-family: 'Advent Pro';
+    outline: 0 !important;
+    margin-left: 100px;
+}
+#warrior .form_area textarea,
+.form-inline .form-control,
+input#name,
+input#email,
+input#subject,
+input#attachment {
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #d4d4d4;
+    font-style: italic;
+    color: #ffffff;
+    font-family: 'Marvel';
+    font-weight: 700;
+}
+#warrior input[type=file]
+{
+    background: #43a906;
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+}
+#slider_partner {
+    min-height: 300px;
+    /*margin-left: 100px;
+    margin-right: 100px; /* if gusto liitan yung product gallery / slider */ 
+    border-radius: 10px 10px 10px 10px;
+    background-color: #ddd;
+    width: 100%;
+}
+#slider_partner .slider_text {
+    padding-bottom: 13%;
+}
+#sliderpartner .slider_text h2 {
+    font-size: 52px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+}
+#slider_partner .slider_text h3 {
+    font-size: 45px;
+    font-family: 'Marvel';
+    color: #fff;
+}
+/*#slider .slider_text p {
+    font-size: 17px;
+    padding-bottom: 60px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 400;
+}*/
+#slider_partner .slider_text a.custom_btn {
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 25px;
+    background: #008000;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 600;
+}
+#slider_partner .slider_text h2,
+#slider_partner .slider_text h3,
+#slider_partner .slider_text p,
+#slider_partner .slider_text a.custom_btn {
+    text-transform: uppercase;
+}
+#slider_partner .slider_text h3 {
+    font-size: 45px;
+    padding: 10px 0;
+    font-family: 'Open Sans Condensed';
+    font-weight: normal;
+}
+#slider_partner .slider_overlay {
+    position: relative;
+}
+#slider_partner .slider_overlay:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #008000 100%);*/
+}
+#slider_partner img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin-left: 22.5%;
+    margin-right: 10%;
+}
+#slider_partner td, #slider_partner th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    }
+#slider_partner .item img {
+
+    width: 100%;
+
+}
+#slider_partner .head_product h3, #slider_partner .head_product2 h3{
+    text-align: center;
+color: #008000;
+font-family: 'Marvel'
+font-weight: 800;
+margin: auto;
+padding-top: 15px;
+}
+#slider_partner input#name_partner, input#file_partner, input#upload_partner, input#id_partner, input#delete_partner {
+    background-color: green;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 43%;
+    font-family: 'Marvel';
+}
+
+/*Slider Fade In*/
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/*******gallery*******/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#gallery {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  padding-bottom: 10px;
+text-align: center:
+font-size: 20px;
+font-weight: 600px;
+font-family: 'Advent Pro';
+}
+.gallery > div {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+}
+.gallery > div > img {
+  display: block;
+  width: 100px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+  min-height: 150px;
+border-radius: 10px 10px 10px 10px;
+}
+.gallery > div:hover {
+  z-index: 1;
+}
+.gallery > div:hover > img {
+  transform: scale(4,4);
+  transition: .3s transform;
+}
+.gallery > div:hover > p {
+  transform: scale(3,3);
+  transition: .3s transform;
+text-align: center:
+font-size: 20px;
+}
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+#gallery h1 {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  font-family: inherit;
+}
+
+/*Achivment THE GREEN WITH ICON PART. CHANGE TO HR ADMIN*/
+
+div#achivement {
+    overflow: hidden;
+}
+.achivment_padding {
+    padding: 70px 0;
+}
+/*#counter {
+    min-height: 450px;
+    background: #bdbebd;
+    border-bottom: 1px solid #8c8e8c;
+}*/
+/*.counter_header {
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+}*/
+section#counter {
+    background: url(../img/img1.jpg) no-repeat scroll top center / cover;
+    color: #fff;
+}
+.counter_img_overlay {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.52);
+}
+.counter_header h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-family: 'Advent Pro';
+}
+.counter_header p {
+    font-size: 16px;
+    padding-bottom: 60px;
+    font-family: 'Marvel';
+    padding-top: 15px;
+}
+.counter_text {
+    color: #fff;
+    font-weight: 700;
+}
+.sigle_counter_item {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.sigle_counter_item img {
+    padding-bottom: 20px;
+    height: 90px;
+}
+.sigle_counter_item i {
+    font-size: 60px;
+    padding: 10px;
+    color: #43A906;
+}
+.counter_text span {
+    font-size: 32px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    font-family: 'Advent Pro';
+    font-weight: 600;
+}
+.counter_text p {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 10px;
+    font-family: 'Open Sans Condensed';
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/*********page header*********/
+#credit {
+    min-height: 80px;
+    font-size: 0.7in; 
+    text-shadow: 5px 5px 10px black; 
+    font-style: italic; 
+    font-family: 'Righteous';
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.cre_header h2 {
+    text-align: center;
+    padding-top: 0;
+    font-weight: 800;
+    font-size: 0.6in;
+    color: #eeeeee;
+    margin: auto;
+}
+#credit .cre_header p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Marvel';
+    padding-bottom: 30px;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+#credit .cre_header h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+/* ************deliverables table *********************** */
+#deliverables {
+    min-height: 400px;
+    font-family: 'Advent Pro';
+    display: inline-block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    color: #008000;   
+    margin: auto; 
+
+}
+#deliverables table {
+    background: url(img/table_background_del.jpeg);
+}
+
+#deliverables {
+    font-family: 'Advent Pro';
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 800;
+    font-size: 16px;
+    color: #006400;
+}
+#deliverables button{
+    background: #008000;
+    color: #fff;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Marvel';
+}
+#deliverables td, #deliverables th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+
+#deliverables td {
+    font-weight: 500;
+}
+#deliverables th {
+background-color: #008000;
+    color: white;
+}
+#deliverables tr {
+    background-color: #f9f4fe;
+}
+#deliverables tr:hover {
+    background-color: #ddd;
+    transform: scale(1,1.2);
+    transition: .3s transform;
+    text-shadow: 5px 5px 5px #ffffff;
+    transition: .3s text-shadow;
+}    
+ 
+#deliverables h2 , #deliverables h1 {
+text-align: center;
+color: #008000;
+font-family: 'Marvel'
+font-weight: 800;
+margin: auto;
+padding-top: 15px;
+}
+#deliverables .add table, #deliverables .output table, #deliverables .delete table {
+    margin: auto;
+}
+#deliverables h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*Testimonial*/
+
+#testimonial {
+    color: #fff;
+    background: url(../img/img3.jpg) no-repeat scroll top center / cover;
+}
+.testimonial_overlay {
+    padding: 80px 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+#testimonial .testimonial_header {
+}
+#testimonial .testimonial_header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #fff;
+}
+#testimonial .testimonial_header p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Marvel';
+}
+
+/************quicklinks*************/
+#link {
+    max-height: 200px;
+    background: #fff;
+    padding: 0px 0;
+}
+.lin_header {
+    text-align: center;
+    color: #222222;
+    padding-top: 0;
+}
+.fw-heading.fw-heading-center {
+    padding-bottom: 0px;
+
+}
+.lin_header h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0px;
+    font-family: 'Advent Pro' !important;
+    color: #222222;
+}
+.lin_header p {
+    font-size: 16px;
+    font-family: 'Marvel';
+}
+#link .single_item {
+    padding-top: 20px;
+    text-align: center;
+   
+}
+#link .link_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #C4C4C4;
+    transition: .7s;
+}
+#link .link_icon i {
+    margin-top: 25%;
+    font-size: 16px;
+    transition: .7s;
+    color: #008000;
+}
+#link .item_list h4 {
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #393939;
+    transition: 0.7s;
+    font-family: 'Advent Pro';
+}
+/*#link .item_list p {
+    font-size: 14px;
+    color: #646464;
+    font-family: 'Marvel';
+}*/
+#link .item_list:hover .link_icon {
+    background: #008000;
+    cursor: pointer;
+}
+#link .item_list:hover .link_icon i {
+    color: #fff;
+}
+#link .item_list:hover h4 {
+    color: #43a906;
+    cursor: pointer;
+}
+.modal .modal-dialog{
+width: 1400px;
+}
+ .modal-title {
+font-family: 'Marvel';
+font-weight: 800;
+font-size: 25px;
+}
+ #link .b {
+    font-size: 20px;
+ }
+
+/* ****************battle cry************* */
+#battlecry {
+    margin: auto;
+    border: none;
+    max-height: 300px;
+    margin-left: 100px;
+    margin-right:100px;
+}
+#banner {
+    height: 45%;
+    background: linear-gradient(green, #eeeeee);
+    overflow: hidden;
+    border: none;
+}
+#banner a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    animation: 1s fadein ease-in-out;
+    animation-fill-mode: forwards;
+}
+#product {
+    display: block;
+    z-index: 10;
+    width: 50%;
+    height: 60%;
+    opacity: 0;
+    animation: 1s growin ease-in-out 1s;
+    animation-fill-mode: forwards;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+}
+
+#core_values {
+
+    font-family: 'Righteous', cursive;
+    margin-left: 250px;
+    color: #00008B;
+
+}
+#banner input[type=file]{
+    background-color: green;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 40%;
+    width: 50px;
+}
+#banner input[type=submit] {
+    background-color: green;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 43%;
+}
+#banner input:hover {
+
+    background-color: #006400;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes roty {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rollin {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: 0px;
+        right: 0px;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(345deg);
+        top: 40px;
+        right: 40px;
+    }
+}
+@keyframes growin {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* --------- ORG CHART ------- */
+#orgchart {
+
+    min-height: 1000px;
+    width: 800px;
+    background-color: #eeeeee;
+    font-family: 'Advent Pro';
+    margin: auto;
+    color: #000800;
+    margin-top: 50px;
+    animation: 1s fadein ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+#orgchart img {
+
+    min-height: 950px;
+    min-width: 750px;
+
+}
+#orgchart img:hover {
+        transform: scale(1.5,1.5);
+  transition: .3s transform;
+}
+#orgchart h1 {
+
+    text-shadow: 5px;
+}
+#orgchart span {
+
+    text-shadow: 5px;
+}
+#orgchart button {
+
+    border-radius: 10px 10px 10px 10px;
+
+}
+#orgchart input[type=file]{
+    background-color: #eeeeee;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 488px;
+    width: 50px;
+}
+#orgchart input[type=submit] {
+    background-color: #eeeeee;
+    padding:5px 15px; 
+    border-color: #000800;
+    cursor:pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 540px;
+}
+#orgchart input:hover {
+
+    background-color: #008000;
+}
+
+/* ****************promotion or advertise area************** */
+#promote {
+    min-height: 300px;
+    background: #eeeeee;
+    padding: 80px 0;
+}
+.adv {
+    padding-top: 50px;
+}
+input#name,
+input#email {
+    margin-bottom: 10px !important;
+}
+.promote_area textarea {
+    resize: none;
+    width: 555px;
+}
+.promote_area textarea,
+.form-inline .form-control,
+input#name,
+input#email,
+input#subject,
+input#attachment {
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #d4d4d4;
+    font-style: italic;
+    color: #696969;
+    font-family: 'Marvel';
+}
+li.fw-flash-message {
+    color: red;
+    font-size: 4rem;
+}
+.adv_title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+.acustom-btn {
+    padding: 13px 82px;
+    background: #43a906;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-family: 'Advent Pro';
+    outline: 0 !important;
+    margin-left: 59.99px;
+}
+.alternative {
+    padding-top: 50px
+}
+.alternative .title h5 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+.alternative_location i span {
+    padding-left: 15px;
+    color: #696969;
+    font-size: 14px;
+    font-family: 'Marvel';
+}
+.alternative_location i {
+    padding-bottom: 15px;
+}
+.alternative_location {
+    color: #696969;
+}
+.promote_area h3 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: 'Advent Pro';
+}
+.promote_area p {
+    font-size: 16px;
+    color: #646464;
+    font-family: 'Marvel';
+}
+#promote i {
+    font-family: 'Advent Pro';
+}
+
+/********************* calendar ***********/
+
+ .modal-dialog-cal {
+
+     max-width: 400px;
+} /* ayaw ma apply nasa html */
+
+.month_style {
+  width: 120px;
+  background-color: #eeeeee;
+  font-size: 18px;
+  border: none;
+  margin-left: 5px;
+}
+
+.year_style {
+  width: 85px;
+  background-color: #008000;
+  font-size: 18px;
+  border: none;
+  text-align: center;
+}
+
+.build_style {
+  background-color: #008000;
+  width: 85px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.area_style {
+  width: 294px;
+  margin-top: 15px;
+  font-size: 24px;
+  max-width: 295px;
+  max-height: 225px;
+}
+/*just remove the max-height
+ and max-width to move the textarea
+*/
+
+.btn_nav {
+  background-color: buttonface;
+  width: 57px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight:bold;
+}
+
+/* Roles */
+#roles {
+    min-height: 400px;
+    font-family: 'Advent Pro';
+    display: inline-block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    color: #008000;   
+    margin: auto;
+    padding-top: 20px;
+}
+
+#roles {
+    font-family: 'Advent Pro';
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 800;
+    font-size: 16px;
+    color: #006400;
+}
+#roles button{
+    background: #008000;
+    color: #fff;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Marvel';
+}
+#roles td, #roles th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    }
+#roles td {
+    font-weight: 500;
+}
+#roles th {
+background-color: #008000;
+    color: white;
+}
+
+#roles h2 , #roles h1 {
+text-align: center;
+color: #008000;
+font-family: 'Marvel'
+font-weight: 800;
+margin: auto;
+padding-top: 15px;
+}
+/* may color background ng rows and may hover effect   */
+#roles .add table, #roles .output table, #roles .delete table , #roles .uppercase table {
+    margin: auto;
+}
+#roles .up table {
+
+    max-width: 400px;
+}
+#roles .output .ts tr {
+    background-color: #f2ffff ;
+}
+#roles .output .ts tr:hover {
+    background-color: #ddd;
+    transform: scale(1,1.1);
+    transition: .3s transform;
+    text-shadow: 5px 5px 5px #ffffff;
+    transition: .3s text-shadow;
+} 
+#roles .output .ac  tr {
+     background-color: #e8f4ff;
+}
+#roles .output .ac tr:hover {
+    background-color: #ddd;
+    transform: scale(1,1.1);
+    transition: .3s transform;
+    text-shadow: 5px 5px 5px #ffffff;
+    transition: .3s text-shadow;
+}   
+#roles .output .bf  tr {
+     background-color: #e6e6f3;
+}
+#roles .output .bf tr:hover {
+    background-color: #ddd;
+    transform: scale(1,1.1);
+    transition: .3s transform;
+    text-shadow: 5px 5px 5px #ffffff;
+    transition: .3s text-shadow;
+} 
+#roles .output h2 , #roles h1 {
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+#roles .output .ts th, #roles .output .ac th, #roles .output .bf th {
+    transform: none;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+
+/* Forms */
+
+#forms {
+    min-height: 400px;
+    font-family: 'Advent Pro';
+    display: inline-block;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    color: #008000;   
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#forms {
+    font-family: 'Advent Pro';
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 800;
+    font-size: 16px;
+    color: #006400;
+}
+#forms table {
+    /* rounded corners*/
+}
+#forms button{
+    background: #008000;
+    color: #fff;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Marvel';
+}
+#forms td, #forms th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    }
+#forms td {
+    font-weight: 500;
+}
+#forms th {
+background-color: #008000;
+    color: white;
+}
+#forms tr {
+    background-color: #ddd ;
+}
+#forms tr:hover {
+    background-color: #ffffff;
+    transform: scale(1,1.2);
+    transition: .3s transform;
+    text-shadow: 5px 5px 5px #ffffff;
+    transition: .3s text-shadow;
+} 
+#forms h2 , #forms h1 {
+text-align: center;
+color: #008000;
+font-family: 'Marvel'
+font-weight: 800;
+margin: auto;
+padding-top: 15px;
+}
+#forms .add table, #forms .output table, #forms .delete table {
+    margin: auto;
+}
+#forms h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* Policy & FAQs*/
+    
+    #policy {
+    min-height: 1000px;
+    width: 800px;
+    background-color: #ddd;
+    font-family: 'Advent Pro';
+    margin: auto;
+    color: #000800;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    animation: 1s fadein ease-in-out 1s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+#policies .head_partner h3 {
+    font-family: 'Advent Pro';
+    font-weight: 800;
+    text-align: center;
+}
+#policy img {
+    min-width: 500px;
+    min-height: 900px;
+}
+
+/* Privacy Statement */
+
+#privacy_statement {
+    text-align: center;
+    font-family: 'Marvel';
+    max-width: 500px;
+}
+#privacy_statment .modal-body{
+    max-width: 500px;
+    text-align: center;
+    display: inline-block;
+}
+#privacy_statment .modal-footer button{
+    background-color: red;
+}
+
+/* Map of customer */
+
+#mapph {
+        background-image: url(/img/map.png); 
+        background-attachment: fixed;
+        margin-left: 50px;
+        animation: 1s growin ease-in-out 1s;
+        animation-fill-mode: forwards;
+        border-radius: 10px;
+        border-radius: 10px 10px 10px 10px;
+
+}   
+#mapph p {
+
+    position: absolute; top: 55%; left: 35%;
+    transform: translate(-50%, -50%); 
+    animation: scroll-up 15s linear infinite;
+    position: absolute; 
+    overflow-y: auto; 
+    height: 350px; 
+    width: 320px; 
+    text-align: center;
+    color: #000;
+    font-family: 'Marvel';
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 0;
+    animation: scroll 5s linear infinite;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#mapph img {
+    margin-bottom: 30px;
+    max-height: 300px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0;
+    width: 400px;
+}
+.map_ph .title h5, .map_ph .title h4 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+#mapph .title h5, #mapph .title h4 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+#mapph .map_ph .title h5 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Map beside promote */
+
+
+
+/*Contact*/
+
+#contact {
+    min-height: 300px;
+    background: #ffffff;
+    padding: 80px 0;
+}
+.msg {
+    padding-top: 50px;
+}
+input#name,
+input#email {
+
+    margin-bottom: 10px !important;
+}
+.text_area textarea {
+    resize: none;
+    width: 555px;
+}
+.text_area textarea,
+.form-inline .form-control,
+input#name,
+input#email,
+input#subject{
+    border-radius: 0px;
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #d4d4d4;
+    font-style: italic;
+    color: #696969;
+    font-family: 'Marvel';
+}
+li.fw-flash-message {
+    color: red;
+    font-size: 4rem;
+}
+.msg_title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+.custom-btn {
+    padding: 13px 82px;
+    background: #43a906;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-family: 'Advent Pro';
+    outline: 0 !important;
+}
+.office {
+    padding-top: 50px
+}
+.office .title h5 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+.office_location i span {
+    padding-left: 15px;
+    color: #696969;
+    font-size: 14px;
+    font-family: 'Marvel';
+}
+.office_location i {
+    padding-bottom: 15px;
+    color: #43A906;
+}
+.office_location {
+    color: #696969;
+}
+.contact_area h3 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: 'Advent Pro';
+}
+.contact_area p {
+    font-size: 16px;
+    color: #646464;
+    font-family: 'Marvel';
+}
+#mappic {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    min-height: 300px;
+    animation: 1s fadein ease-in-out 1s;
+    animation-fill-mode: forwards;
+
+}
+
+/*Footer*/
+
+#footer {
+    min-height: 100px;
+    background: #222222;
+    color: #fff;
+}
+#footer .copyright,
+#footer .designer {
+    padding-top: 45px;
+    font-size: 14px;
+}
+#footer .copyright p {
+    text-align: left;
+}
+#footer .designer p {
+    text-align: right;
+}
+#footer .copyright p,
+#footer .copyright p span a,
+#footer .designer p,
+#footer .designer a {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Marvel';
+    padding-left: 3px;
+}
+
+/*Back to Top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(84, 225, 0, 0.18);
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+    display: none;
+    background: #43a906;
+    border-radius: 5%
+}
+#back-to-top:hover {
+    color: #fff;
+    border-radius: 50%;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    padding-top:0px;
+}
+
+/*****/
+
+.section-wraper {
+    position: relative;
+}
+.section-edit {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+.section-abc {
+    background: rgba(255, 255, 255, 0.68);
+    padding: 2px 5px;
+    font-size: 12px;
+    font-style: italic;
+    display:none;
+}
+.section-edit:hover .section-abc{
+    display:inline;
+}
+.section-edit .post-edit-link {
+    margin: 10px 0;
+    padding: 2px 12px;
+}
+.section-edit .post-edit-link {
+    margin: 3px 0;
+    padding: 2px 12px;
+    font-size: 12px;
+    line-height: 1.45;
+}
+.section-edit .post-edit-link {
+    margin: 10px 0;
+    display: inline-block;
+    background: #E85757 ;
+    color: #fff!important;
+    padding: 2px 12px;
+    border-radius: 3px;
+}
+.recent-blog .entry-header a {
+    font-size: 1.5rem;
+}
+
+/* .event_img img {
+    width: 440px;
+    height: 279px;
+}
+.event_news_img img {
+    width: 95px;
+    height: 90px;
+}
+*/
+
+#market-place .fw-single-image img {
+    margin: 0 auto;
+}
+/*.contact_us_padding {
+    padding: 80px 0px;
+}*/
+#contact-us .wel_header {
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+#contact-us h3 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: 'Advent Pro';
+}
+#contact-us .wel_header h5 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: 'Advent Pro';
+    color: #222222;
+    padding-top: 0px
+}
+#contact-us .office_location i {
+    padding-bottom: 15px;
+}
+#contact-us .office_location i span {
+    padding-left: 15px;
+    color: #696969;
+    font-size: 14px;
+    font-family: 'Marvel';
+}
+#contact-us .form-group {
+    margin-bottom: 0;
+}
+.wel_header.contact_us_h5 {
+    margin-left: -15px !important;
+}
+/*input#name,label.input,label.textarea,textarea.form-control {
+    width: 100%;
+}*/
+
+#slider .carousel-indicators {
+    bottom: 70px;
+}
+ul.entry-meta {
+    text-align: left;
+}
+.btn-primmary{
+    background-color: #43a906;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: 'Advent Pro';
+    font-weight: 700;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #ffffff;
+}
+#commentform #comment {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.widget_search .search-form input[type="submit"], .widget_search input[type="submit"] {
+    font-family: 'Advent Pro';
+    font-weight: 700;
+}
+.widget_search .search-form input[type="search"], .widget_search input[type="search"] {
+    padding: 0 40px;
+}
+.main-content.blog-w.rap,.main-content.container.blog-wrap.single-blog {
+    margin-top: 80px;
+}

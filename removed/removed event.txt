@@ -1,0 +1,217 @@
+unahco home page event html codes
+<!--start of event  CHANGE TO HR ADMIN / NOT SURE, MAY ERASE-->
+<!--        <section id="event">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="event_header text-center">
+                            <h2>latest event</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>	-->
+                <!--End of row-->
+<!--                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6 zero_mp">
+                                <div class="event_item">
+                                    <div class="event_img">
+                                        <img src="img/tree_cut_1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 zero_mp">
+                                <div class="event_item">
+                                    <div class="event_text text-center">
+                                        <a href=""><h4>70th Unilab Anniversary</h4></a>
+                                        <h6>25-26 June in Alabang</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip scing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <a href="" class="event_btn">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	-->
+                        <!--End of row-->
+<!--                        <div class="row">
+                            <div class="col-md-6 zero_mp">
+                                <div class="event_item">
+                                    <div class="event_text text-center">
+                                        <a href=""><h4>Bayanihan Event</h4></a>
+                                        <h6>10-11 July in Manila</h6>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adip scing elit. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <a href="" class="event_btn">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 zero_mp">
+                                <div class="event_item">
+                                    <div class="event_img">
+                                        <img src="img/tree_cut_2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	-->
+                        <!--End of row-->
+<!--                    </div>
+                    <!--End of col-md-8-->
+<!--                    <div class="col-md-4">
+                        <div class="event_news">
+                            <div class="event_single_item fix">
+                                <div class="event_news_img floatleft">
+                                    <img src="img/tree_cut_3.jpg" alt="">
+                                </div>
+                                <div class="event_news_text">
+                                    <a href="#"><h4>Unahco Palawan Adventures...</h4></a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam.</p>
+                                </div>
+                            </div>
+                        </div> 		-->
+<!--                        <div class="event_news">
+                            <div class="event_single_item fix">
+                                <div class="event_news_img floatleft">
+                                    <img src="img/tree_cut_4.jpg" alt="">
+                                </div>
+                                <div class="event_news_text">
+                                    <a href="#"><h4>Credit Team Building</h4></a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam.</p>
+                                </div>
+                            </div>
+                        </div>	-->
+<!--                        <div class="event_news">
+                            <div class="event_single_item fix">
+                                <div class="event_news_img floatleft">
+                                    <img src="img/tree_cut_3.jpg" alt="">
+                                </div>
+                                <div class="event_news_text">
+                                    <a href="#"><h4>Rural Area Volunteer</h4></a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_news">	-->
+<!--                            <div class="event_single_item fix">
+                                <div class="event_news_img floatleft">
+                                    <img src="img/tree_cut_4.jpg" alt="">
+                                </div>
+                                <div class="event_news_text">
+                                    <a href="#"><h4>Bayanihan Foundation Scholars</h4></a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam.</p>
+                                </div>
+                            </div>
+                        </div>	-->
+<!--                        <div class="event_news">
+                            <div class="event_single_item fix">
+                                <div class="event_news_img floatleft">
+                                    <img src="img/tree_cut_3.jpg" alt="">
+                                </div>
+                                <div class="event_news_text">
+                                    <a href="#"><h4>Bocaue Soft Opening</h4></a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>		-->	
+                    <!--End of col-md-4-->
+<!--                </div> -->
+                <!--End of row-->
+<!--            </div>
+            <!--End of container-->
+        </section>		-->
+        <!--end of event-->
+
+
+
+event css
+
+/*Event*/
+/*
+#event {
+    min-height: 550px;
+    background: #fff;
+    color: #000;
+    padding: 80px 0px;
+}
+#event .event_header {
+    padding-bottom: 50px;
+}
+#event .event_header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Advent Pro';
+    color: #222222;
+}
+.event_header.text-center p {
+    color: #393939;
+    font-size: 16px;
+    font-family: 'Marvel';
+}
+#event .event_text {
+    padding: 30px 30px 0;
+    background: #eff0f2;
+    min-height: 279px;
+}
+#event .event_item img {
+    width: 100%;
+}
+#event .event_text {
+    padding: 30px 30px 0;
+    width: 100%;
+}
+#event .event_text h4 {
+    font-size: 18px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: #454444;
+    font-family: 'Advent Pro';
+}
+#event .event_text h6 {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #6c6b6b;
+    font-family: 'Advent Pro';
+}
+#event .event_text p {
+    font-size: 14px;
+    color: #646464;
+    padding-bottom: 35px;
+    font-family: 'Marvel';
+}
+#event a.event_btn {
+    background: #101010;
+    padding: 5px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 2px;
+    transition: 0.7s ease;
+    font-family: 'Marvel';
+}
+#event a.event_btn:hover {
+    background: #43a906;
+}
+#event .event_news {
+    padding-bottom: 27px;
+}
+.event_news_text {
+    display: block;
+    overflow: hidden;
+}
+.event_news_text h4 {
+    color: #454444;
+    font-size: 18px;
+    font-family: 'Advent Pro';
+    font-weight: 700;
+}
+#event .event_news_text p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #646464;
+    font-family: 'Marvel';
+}
+#event .event_news_img {
+    padding-right: 10px;
+}
+*/
